@@ -11,7 +11,7 @@ RUN pip --no-cache-dir install \
         matplotlib \
         sklearn \
         hmmlearn \
-        PIL \
+        pillow \
         && \
     python -m ipykernel.kernelspec
 

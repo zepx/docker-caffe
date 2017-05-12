@@ -4,5 +4,7 @@
 nvidia-docker run -ti --rm \
     -e LOCAL_USER_I=`id -u $USER` \
     -v /home/choong/Projects:/home/choong/work \
-    -p 8888:8888 \
+    -v /mnt/data/:/mnt/data \
+    -v caffe_data:/opt/caffe/models \
+    --network host \
     caffe:jupyter bash
